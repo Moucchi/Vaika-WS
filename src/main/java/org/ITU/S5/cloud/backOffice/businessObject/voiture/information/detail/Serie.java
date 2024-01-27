@@ -41,6 +41,6 @@ public class Serie {
 
     int place;
 
-    double consommantion;
+    double consommation;
 
 }
