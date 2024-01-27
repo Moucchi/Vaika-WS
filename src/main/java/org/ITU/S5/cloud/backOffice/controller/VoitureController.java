@@ -180,7 +180,7 @@ public class VoitureController {
                               @RequestParam("prix") double prixAchat,
                               @RequestParam("idAcheteur") int idAcheteur,
                               @RequestParam("idVoiture") int idVoiture
-                              ) {
+    ) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate dateOnly = LocalDate.parse(date, formatter);
         LocalDateTime dateTime = dateOnly.atStartOfDay();
@@ -196,9 +196,9 @@ public class VoitureController {
     }
 
     @PostMapping("/model")
-    public void addModel(@RequestParam("nom") String nom ,
+    public void addModel(@RequestParam("nom") String nom,
                          @RequestParam("idMarque") int idMarque
-                         ) {
+    ) {
         Model temp = new Model();
         temp.setNom(nom);
         temp.setMarque(marqueRepo.findById(idMarque).get());
@@ -206,12 +206,12 @@ public class VoitureController {
         modelRepo.save(temp);
     }
 
-    @PostMapping("/voiture")
+    @PostMapping
     public void addVoiture(@RequestParam("anneeCirculation") int anneeCirculation,
                            @RequestParam("couleur") String couleur,
                            @RequestParam("kilometrage") double kilometrage,
-                            @RequestParam("idSerie") int idSerie
-                           ) {
+                           @RequestParam("idSerie") int idSerie
+    ) {
         Voiture temp = new Voiture();
         temp.setAnneeMiseEnCirculation(anneeCirculation);
         temp.setCouleur(couleur);
