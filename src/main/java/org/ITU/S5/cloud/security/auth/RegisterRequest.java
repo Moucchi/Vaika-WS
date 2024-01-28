@@ -1,10 +1,10 @@
 package org.ITU.S5.cloud.security.auth;
 
-import itu.security.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.ITU.S5.cloud.security.user.Role;
 
 @Data
 @Builder
