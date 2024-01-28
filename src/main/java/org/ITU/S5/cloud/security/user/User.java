@@ -1,5 +1,7 @@
 package org.ITU.S5.cloud.security.user;
 
+import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.HistoriqueVoiture;
 import org.ITU.S5.cloud.security.token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -22,13 +24,14 @@ import java.util.List;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String firstname;
 
     private String lastname;
 
+    @Column(unique = true)
     private String email;
 
     private String password;
@@ -38,6 +41,17 @@ public class User implements UserDetails {
 
     @OneToMany(mappedBy = "user")
     private List<Token> tokens;
+
+    double portefeuille;
+
+    @OneToMany(mappedBy = "utilisateur")
+    List<HistoriqueVoiture> historiqueVoitures;
+
+    @OneToMany(mappedBy = "annonceur")
+    List<Annonce> annonces;
+
+    @ManyToMany(mappedBy = "followers")
+    List<Annonce> favoris;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

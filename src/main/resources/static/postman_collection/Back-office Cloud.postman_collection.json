@@ -1,0 +1,1057 @@
+{
+	"info": {
+		"_postman_id": "370f645c-2318-48b0-bc8b-ac6d64704ba5",
+		"name": "Back-office Cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29992008"
+	},
+	"item": [
+		{
+			"name": "cylindre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=opposés",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"cylindres"
+					],
+					"query": [
+						{
+							"key": "disposition",
+							"value": "opposés"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cylindre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=W",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"cylindres"
+					],
+					"query": [
+						{
+							"key": "disposition",
+							"value": "W"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cylindre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=V",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"cylindres"
+					],
+					"query": [
+						{
+							"key": "disposition",
+							"value": "V"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cylindre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=horizontal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"cylindres"
+					],
+					"query": [
+						{
+							"key": "disposition",
+							"value": "horizontal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cylindre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=vertical",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"cylindres"
+					],
+					"query": [
+						{
+							"key": "disposition",
+							"value": "vertical"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conception",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/conceptions?nom=wankel",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"conceptions"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "wankel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conception",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/conceptions?nom=à piston",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"conceptions"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "à piston"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carburant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/carburants?nom=electricite",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"carburants"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "electricite"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carburant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/carburants?nom=hybride",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"carburants"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "hybride"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carburant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/carburants?nom=diesel",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"carburants"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "diesel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carburant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/carburants?nom=essence",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"carburants"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "essence"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allumage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/allumages?nom=compression",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"allumages"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "compression"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allumage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/allumages?nom=etincelle",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"allumages"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "etincelle"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Hyundai",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Hyundai"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Renault",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Renault"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Mercedes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Mercedes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Ford",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Ford"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Chevrolet",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Chevrolet"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Nissan",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Nissan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques?nom=Toyota",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Toyota"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/categories?nom=Plaisir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Plaisir"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/categories?nom=Berline",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Berline"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/categories?nom=SUV",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "SUV"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/categories?nom=4*4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "4*4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transmissoin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/transmissions?nom=Arriere",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"transmissions"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Arriere"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/models?nom=RAV 4&idMarque=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"models"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "RAV 4"
+						},
+						{
+							"key": "idMarque",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "temps",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/temps?nom=6 temps",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"temps"
+					],
+					"query": [
+						{
+							"key": "idCarburant",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "idConception",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "idCylindre",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "nombreCylindre",
+							"value": "16",
+							"disabled": true
+						},
+						{
+							"key": "idTemps",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "nom",
+							"value": "6 temps"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moteur",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs?idAllumage=1&idCarburant=1&idConception=1&idCylindre=1&nombreCylindre=16&idTemps=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs"
+					],
+					"query": [
+						{
+							"key": "idAllumage",
+							"value": "1"
+						},
+						{
+							"key": "idCarburant",
+							"value": "1"
+						},
+						{
+							"key": "idConception",
+							"value": "1"
+						},
+						{
+							"key": "idCylindre",
+							"value": "1"
+						},
+						{
+							"key": "nombreCylindre",
+							"value": "16"
+						},
+						{
+							"key": "idTemps",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Serie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/moteurs/series?nom=AX50&annee=2018&idCategorie=3&consommation=6.8&idModel=1&idMoteur=1&place=5&puissance=306&idTransmission=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"moteurs",
+						"series"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "AX50"
+						},
+						{
+							"key": "annee",
+							"value": "2018"
+						},
+						{
+							"key": "idCategorie",
+							"value": "3"
+						},
+						{
+							"key": "consommation",
+							"value": "6.8"
+						},
+						{
+							"key": "idModel",
+							"value": "1"
+						},
+						{
+							"key": "idMoteur",
+							"value": "1"
+						},
+						{
+							"key": "place",
+							"value": "5"
+						},
+						{
+							"key": "puissance",
+							"value": "306"
+						},
+						{
+							"key": "idTransmission",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Voiture",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/voitures?anneeCirculation=2021&couleur=%23C0C0C0&kilometrage=5000&idSerie=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures"
+					],
+					"query": [
+						{
+							"key": "anneeCirculation",
+							"value": "2021"
+						},
+						{
+							"key": "couleur",
+							"value": "#C0C0C0"
+						},
+						{
+							"key": "kilometrage",
+							"value": "5000"
+						},
+						{
+							"key": "idSerie",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Voiture",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/voitures?anneeCirculation=2019&couleur=%234169E1&kilometrage=7800&idSerie=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures"
+					],
+					"query": [
+						{
+							"key": "anneeCirculation",
+							"value": "2019"
+						},
+						{
+							"key": "couleur",
+							"value": "#4169E1"
+						},
+						{
+							"key": "kilometrage",
+							"value": "7800"
+						},
+						{
+							"key": "idSerie",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2024-01-28",
+							"type": "text"
+						},
+						{
+							"key": "prix",
+							"value": "210000000",
+							"type": "text"
+						},
+						{
+							"key": "idAcheteur",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "idVoiture",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/voitures/historiques",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures",
+						"historiques"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historiqueVoiture",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2024-01-28",
+							"type": "text"
+						},
+						{
+							"key": "prix",
+							"value": "195000000",
+							"type": "text"
+						},
+						{
+							"key": "idAcheteur",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "idVoiture",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/voitures/historiques",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures",
+						"historiques"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_evolution_prix_voiture",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ1NTI1MCwiZXhwIjoxNzA2NTQxNjUwfQ.dz1-iRuV5bM05Xx81UH60UGNxnkwIa1zmtlItP1giZE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/voitures/statistiques/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures",
+						"statistiques",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ1MjE2NSwiZXhwIjoxNzA2NTM4NTY1fQ.sfUhbWAwFjAY0g4Hsq7sTIWPSfbcyk7n0yP_sTdgkuQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

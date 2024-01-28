@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.Voiture;
-import org.ITU.S5.cloud.backOffice.businessObject.acteur.Utilisateur;
+import org.ITU.S5.cloud.security.user.User;
 
 import java.sql.Timestamp;
 
@@ -24,7 +24,7 @@ public class HistoriqueVoiture {
 
     @ManyToOne
     @JoinColumn(name = "id_utilisateur")
-    Utilisateur utilisateur;
+    User utilisateur;
 
     Timestamp dateAchat;
 
