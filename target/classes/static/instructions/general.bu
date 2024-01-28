@@ -1,0 +1,51 @@
+Plateformes :
+    Railway :
+        Web Service Java
+    Netlify :
+        Front Office
+        Back Office
+
+
+Modules :
+    vente de voiture :
+        annonce
+        gestion annonce
+
+    messagerie :
+        contacter proprietaire
+
+    commission :
+        parametrable par vente de voiture
+
+    minimales :
+        Back office :
+            login
+            gestion des elements necessaires ( back office ) :
+                categorie
+                marque
+
+            statistiques des vente et de voiture
+            validation annonce
+
+        Front Office :
+            liste annonce ( sans login )
+            contacter proprio ( avec login )
+            messagerie ( avec login )
+            recherche avancée :
+                mot clé , catégorie , prix , marque , modèle , ...
+            historique annonce
+            mise en favoris ( annonce )
+
+        Mobile :
+            sign in , sign up
+            add annonce
+                date et heure auto
+                description
+                modele
+                marque
+                prix
+                photos
+
+            liste annonces + status
+            update annonce
+            notification de message
