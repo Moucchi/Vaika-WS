@@ -21,8 +21,6 @@ public class EtatAnnonce {
 
     int valeurNumerique;
 
-    Timestamp date;
-
     @OneToMany(mappedBy = "etat")
     List<Annonce> annonces;
 
