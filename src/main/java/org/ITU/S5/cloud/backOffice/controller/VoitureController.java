@@ -2,10 +2,11 @@ package org.ITU.S5.cloud.backOffice.controller;
 
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.Voiture;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.HistoriqueVoiture;
-import org.ITU.S5.cloud.backOffice.repository.autre.UtilisateurRepo;
 import org.ITU.S5.cloud.backOffice.repository.voiture.HistoriqueVoitureRepo;
 import org.ITU.S5.cloud.backOffice.repository.voiture.SerieRepo;
 import org.ITU.S5.cloud.backOffice.repository.voiture.VoitureRepo;
+import org.ITU.S5.cloud.backOffice.service.VoitureService;
+import org.ITU.S5.cloud.security.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +15,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/v1/voitures")
@@ -21,7 +23,7 @@ public class VoitureController {
 
 
     @Autowired
-    UtilisateurRepo utilisateurRepo;
+    UserRepository utilisateurRepo;
 
     @Autowired
     VoitureRepo voitureRepo;
@@ -31,6 +33,9 @@ public class VoitureController {
 
     @Autowired
     HistoriqueVoitureRepo historiqueVoitureRepo;
+
+    @Autowired
+    VoitureService voitureService;
 
 
     @PostMapping("/historiques")
@@ -76,5 +81,11 @@ public class VoitureController {
     @GetMapping("/{id}")
     public Voiture getById(@PathVariable("id") int id) {
         return voitureRepo.findById(id).get();
+    }
+
+    @GetMapping("/statistiques/{id}")
+    public Map<LocalDateTime, Double> getEvolutionPrix(@PathVariable("id") int id) {
+
+        return voitureService.getEvolutionPrix(id);
     }
 }
