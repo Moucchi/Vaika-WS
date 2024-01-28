@@ -103,7 +103,7 @@ public class MoteurController {
         cylindreRepo.save(temp);
     }
 
-    @PostMapping("/serie")
+    @PostMapping("/series")
     public void addSerie(@RequestParam("nom") String nom,
                          @RequestParam("annee") int annee,
                          @RequestParam("idCategorie") int idCategorie,
@@ -137,7 +137,7 @@ public class MoteurController {
         tempsRepo.save(temp);
     }
 
-    @PostMapping("/transmission")
+    @PostMapping("/transmissions")
     public void addTransmission(@RequestParam("nom") String nom) {
         Transmission temp = new Transmission();
         temp.setNom(nom);
