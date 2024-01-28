@@ -1,6 +1,6 @@
 package org.ITU.S5.cloud.security.auth;
 
-import itu.security.user.Role;
+import org.ITU.S5.cloud.security.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
