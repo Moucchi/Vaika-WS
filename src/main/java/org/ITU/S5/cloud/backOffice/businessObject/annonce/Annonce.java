@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.Voiture;
-import org.ITU.S5.cloud.backOffice.businessObject.acteur.Utilisateur;
+import org.ITU.S5.cloud.security.user.User;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -25,7 +25,7 @@ public class Annonce {
 
     @ManyToOne
     @JoinColumn(name = "id_utilisateur")
-    Utilisateur annonceur;
+    User annonceur;
 
     double prix;
 
@@ -41,7 +41,7 @@ public class Annonce {
             joinColumns = @JoinColumn(name = "id_annonce"),
             inverseJoinColumns = @JoinColumn(name = "id_utilisateur")
     )
-    List<Utilisateur> followers;
+    List<User> followers;
 
 
     @ManyToMany
