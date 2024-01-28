@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "7978a775-a2c4-4168-b908-3ee4395c3a04",
+		"_postman_id": "370f645c-2318-48b0-bc8b-ac6d64704ba5",
 		"name": "Back-office Cloud",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "29992008"
@@ -871,7 +871,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/voitures?anneeCirculation=2019&couleur=%234169E1&kilometrage=5000&idSerie=1",
+					"raw": "localhost:8080/v1/voitures?anneeCirculation=2019&couleur=%234169E1&kilometrage=7800&idSerie=1",
 					"host": [
 						"localhost"
 					],
@@ -901,6 +901,157 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2024-01-28",
+							"type": "text"
+						},
+						{
+							"key": "prix",
+							"value": "210000000",
+							"type": "text"
+						},
+						{
+							"key": "idAcheteur",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "idVoiture",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/voitures/historiques",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures",
+						"historiques"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historiqueVoiture",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2024-01-28",
+							"type": "text"
+						},
+						{
+							"key": "prix",
+							"value": "195000000",
+							"type": "text"
+						},
+						{
+							"key": "idAcheteur",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "idVoiture",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/voitures/historiques",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures",
+						"historiques"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_evolution_prix_voiture",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ1NTI1MCwiZXhwIjoxNzA2NTQxNjUwfQ.dz1-iRuV5bM05Xx81UH60UGNxnkwIa1zmtlItP1giZE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/voitures/statistiques/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"voitures",
+						"statistiques",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ1MjE2NSwiZXhwIjoxNzA2NTM4NTY1fQ.sfUhbWAwFjAY0g4Hsq7sTIWPSfbcyk7n0yP_sTdgkuQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
