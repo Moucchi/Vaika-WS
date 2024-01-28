@@ -1,10 +1,10 @@
 Back office :
     login ( token )
-    gestion des elements necessaires ( back office ) :
+    gestion des elements necessaires ( back office ) : chack
         categorie
         marque
 
-    statistiques des ventes et de voiture
+    statistiques des ventes et de voiture : next
     validation annonce
 
 Web service front office et mobile
