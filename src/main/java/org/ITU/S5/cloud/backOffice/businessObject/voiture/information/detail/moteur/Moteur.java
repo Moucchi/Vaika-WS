@@ -1,10 +1,11 @@
-package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail;
+package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.composition.*;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.Serie;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur.composant.*;
 
 import java.util.List;
 

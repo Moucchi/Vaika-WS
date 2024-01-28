@@ -51,4 +51,7 @@ public class Annonce {
             inverseJoinColumns = @JoinColumn(name = "id_tag")
     )
     List<Tag> tags;
+
+    @OneToMany(mappedBy = "annonce")
+    List<HistoriqueAnnonce> historiqueAnnonces;
 }

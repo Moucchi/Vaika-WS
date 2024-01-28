@@ -6,26 +6,23 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Timestamp;
-import java.util.List;
 
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
-public class EtatAnnonce {
+public class HistoriqueAnnonce {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int reference;
 
-    String valeurString;
+    @ManyToOne
+    @JoinColumn(name = "id_annonce")
+    Annonce annonce;
 
-    int valeurNumerique;
+    @ManyToOne
+    @JoinColumn(name = "id_etat")
+    EtatAnnonce etat;
 
     Timestamp date;
-
-    @OneToMany(mappedBy = "etat")
-    List<Annonce> annonces;
-
-    @OneToMany(mappedBy = "etat")
-    List<HistoriqueAnnonce> historiqueAnnonces;
 }
