@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/annonce")
+@RequestMapping("/v1/annonces")
 public class AnnonceController {
 
 }

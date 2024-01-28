@@ -1,10 +1,10 @@
-package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.composition;
+package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur.composant;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.Moteur;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur.Moteur;
 
 import java.util.List;
 
@@ -12,14 +12,13 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Carburant {
+public class Temps {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
     String nom;
 
-    @OneToMany(mappedBy = "carburant")
+    @OneToMany(mappedBy = "temps")
     List<Moteur> moteurs;
-
 }

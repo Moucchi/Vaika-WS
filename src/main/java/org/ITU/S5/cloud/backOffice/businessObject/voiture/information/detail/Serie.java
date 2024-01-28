@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.composition.Transmission;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur.Moteur;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur.composant.Transmission;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.Categorie;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.Model;
 

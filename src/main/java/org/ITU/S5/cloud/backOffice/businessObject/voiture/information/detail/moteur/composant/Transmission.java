@@ -1,4 +1,4 @@
-package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.composition;
+package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.moteur.composant;
 
 import jakarta.persistence.*;
 import lombok.Getter;
