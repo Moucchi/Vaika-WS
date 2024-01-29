@@ -3,9 +3,11 @@ package org.ITU.S5.cloud.backOffice.controller;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.EtatAnnonce;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.HistoriqueAnnonce;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.Voiture;
 import org.ITU.S5.cloud.backOffice.repository.annonce.AnnonceRepo;
 import org.ITU.S5.cloud.backOffice.repository.annonce.EtatAnnonceRepo;
 import org.ITU.S5.cloud.backOffice.repository.annonce.HistoriqueAnnonceRepo;
+import org.ITU.S5.cloud.backOffice.repository.voiture.VoitureRepo;
 import org.ITU.S5.cloud.security.user.User;
 import org.ITU.S5.cloud.security.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +30,25 @@ public class AnnonceController {
 
     @Autowired
     UserRepository userRepository;
+
+    @Autowired
+    VoitureRepo voitureRepo;
+    @PostMapping
+    public void addAnnonce(@RequestParam("userId")int userId , @RequestParam("idVoiture")int idVoiture , @RequestParam("prix")double prix) {
+        Voiture voiture = voitureRepo.findById(idVoiture).get();
+        User user = userRepository.findById(userId).get();
+        int idEtat = 1;
+        EtatAnnonce etatAnnonce = etatAnnonceRepo.findById(idEtat).get();
+
+        Annonce annonce = new Annonce();
+        annonce.setVoiture(voiture);
+        annonce.setAnnonceur(user);
+        annonce.setPrix(prix);
+        annonce.setEtat(etatAnnonce);
+        annonce.setDatePublication(new java.sql.Timestamp(System.currentTimeMillis()));
+
+        annonceRepo.save(annonce);
+    }
 
     @PostMapping("/validate")
     public void validateAnnonce(@RequestParam("id") int id) {
@@ -54,7 +75,7 @@ public class AnnonceController {
     }
 
     //    Voir l’historique de ses annonces
-    @GetMapping("/myHostory")
+    @GetMapping("/myHistory")
     public HashMap<Annonce, List<HistoriqueAnnonce>> getHistoriqueAnnonce(@RequestParam("userId")int userId) {
         List<Annonce> annonces = annonceRepo.findByAnnonceur_Id(userId);
         HashMap<Annonce, List<HistoriqueAnnonce>> historiqueAnnonce = new HashMap<>();
