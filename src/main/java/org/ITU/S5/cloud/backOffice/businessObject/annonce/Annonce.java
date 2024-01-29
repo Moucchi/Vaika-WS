@@ -43,6 +43,9 @@ public class Annonce {
     )
     List<User> followers;
 
+    public void addFollower(User user) {
+        followers.add(user);
+    }
 
     @ManyToMany
     @JoinTable(

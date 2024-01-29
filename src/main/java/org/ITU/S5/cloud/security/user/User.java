@@ -53,6 +53,10 @@ public class User implements UserDetails {
     @ManyToMany(mappedBy = "followers")
     List<Annonce> favoris;
 
+    public void addFavoris(Annonce annonce) {
+        favoris.add(annonce);
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role.name()));

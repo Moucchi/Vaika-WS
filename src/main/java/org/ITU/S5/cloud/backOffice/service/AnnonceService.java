@@ -8,14 +8,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class AnnonceService {
     @Autowired
     AnnonceRepo annonceRepo;
 
-    @Transactional
-    public void updateAnnonce(Annonce annonce) {
-        annonceRepo.save(annonce);
+    List<Annonce> findByCategorie(int idCategorie) {
+        return annonceRepo.findByVoiture_Serie_Categorie_Id(idCategorie);
     }
 
+    List<Annonce> findByMarque(int idMarque) {
+        return annonceRepo.findByVoiture_Serie_Model_Marque_Id(idMarque);
+    }
+
+    List<Annonce> findByModel(int idModel) {
+        return annonceRepo.findByVoiture_Serie_Model_Id(idModel);
+    }
 }
