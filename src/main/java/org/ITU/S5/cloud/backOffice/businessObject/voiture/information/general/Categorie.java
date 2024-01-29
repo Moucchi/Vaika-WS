@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +20,7 @@ public class Categorie {
 
     String nom;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "categorie")
     List<Serie> series;
 }

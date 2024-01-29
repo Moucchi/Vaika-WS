@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.annonce;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,7 @@ public class Tag {
 
     String nom;
 
+    @JsonManagedReference
     @ManyToMany(mappedBy = "tags")
     List<Annonce> annonces;
 }

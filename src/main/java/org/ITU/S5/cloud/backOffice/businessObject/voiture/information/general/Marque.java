@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,7 +19,7 @@ public class Marque {
 
     String nom;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "marque")
     List<Model> models;
-
 }

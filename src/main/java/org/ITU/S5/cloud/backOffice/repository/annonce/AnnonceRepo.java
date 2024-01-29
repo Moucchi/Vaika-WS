@@ -15,10 +15,9 @@ public interface AnnonceRepo extends JpaRepository<Annonce , Integer> {
     //TODO
     List<Annonce> findByVoiture_Serie_Model_Id(int idModel);
 
-    List<Annonce> findByEtat(int idEtat);
-    List<Annonce> findByAnnonceur(int idAnnonceur);
-    List<Annonce> findByTag(int idTag);
-    List<Annonce> findByTags_IdIn(List<Integer> idTags);
+    List<Annonce> findByEtat_Reference(int idEtat);
+    List<Annonce> findByAnnonceur_Id(int idAnnonceur);
+    List<Annonce> findByTags_ReferenceIn(List<Integer> idTags);
     List<Annonce> findByDatePublicationAfter(java.sql.Timestamp date);
     List<Annonce> findByDatePublicationBefore(java.sql.Timestamp date);
     List<Annonce> findByDatePublicationBetween(java.sql.Timestamp date1, java.sql.Timestamp date2);

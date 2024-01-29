@@ -56,7 +56,7 @@ public class AnnonceController {
     //    Voir l’historique de ses annonces
     @GetMapping("/myHostory")
     public HashMap<Annonce, List<HistoriqueAnnonce>> getHistoriqueAnnonce(@RequestParam("userId")int userId) {
-        List<Annonce> annonces = annonceRepo.findByAnnonceur(userId);
+        List<Annonce> annonces = annonceRepo.findByAnnonceur_Id(userId);
         HashMap<Annonce, List<HistoriqueAnnonce>> historiqueAnnonce = new HashMap<>();
 
         for (Annonce annonce : annonces) {
@@ -82,7 +82,7 @@ public class AnnonceController {
     //    Voir la liste de ses annonces et leur statuts
     @GetMapping("/myAnnonces")
     public List<Annonce> getMyAnnonces(@RequestParam("userId") int userId) {
-        return annonceRepo.findByAnnonceur(userId);
+        return annonceRepo.findByAnnonceur_Id(userId);
     }
 
     //    Modification statut annonce
