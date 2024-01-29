@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,10 +19,12 @@ public class HistoriqueVoiture {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_voiture")
     Voiture voiture;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_utilisateur")
     User utilisateur;

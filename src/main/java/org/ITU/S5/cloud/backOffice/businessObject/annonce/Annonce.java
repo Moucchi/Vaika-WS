@@ -1,5 +1,7 @@
 package org.ITU.S5.cloud.backOffice.businessObject.annonce;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,10 +21,12 @@ public class Annonce {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_voiture")
     Voiture voiture;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_utilisateur")
     User annonceur;
@@ -31,10 +35,12 @@ public class Annonce {
 
     Timestamp datePublication;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_etat")
     EtatAnnonce etat;
 
+    @JsonBackReference
     @ManyToMany
     @JoinTable(
             name = "favoris",
@@ -43,7 +49,11 @@ public class Annonce {
     )
     List<User> followers;
 
+    public void addFollower(User user) {
+        followers.add(user);
+    }
 
+    @JsonBackReference
     @ManyToMany
     @JoinTable(
             name = "annonce_tag",
@@ -52,6 +62,7 @@ public class Annonce {
     )
     List<Tag> tags;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "annonce")
     List<HistoriqueAnnonce> historiqueAnnonces;
 }

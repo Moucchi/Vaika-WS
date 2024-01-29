@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.annonce;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,9 +22,11 @@ public class EtatAnnonce {
 
     int valeurNumerique;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "etat")
     List<Annonce> annonces;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "etat")
     List<HistoriqueAnnonce> historiqueAnnonces;
 }

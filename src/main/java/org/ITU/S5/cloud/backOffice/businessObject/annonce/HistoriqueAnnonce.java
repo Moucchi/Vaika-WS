@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.annonce;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,10 +17,12 @@ public class HistoriqueAnnonce {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int reference;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_annonce")
     Annonce annonce;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_etat")
     EtatAnnonce etat;

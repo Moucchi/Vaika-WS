@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.security.user;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.HistoriqueVoiture;
 import org.ITU.S5.cloud.security.token.Token;
@@ -44,14 +45,21 @@ public class User implements UserDetails {
 
     double portefeuille;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "utilisateur")
     List<HistoriqueVoiture> historiqueVoitures;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "annonceur")
     List<Annonce> annonces;
 
+    @JsonManagedReference
     @ManyToMany(mappedBy = "followers")
     List<Annonce> favoris;
+
+    public void addFavoris(Annonce annonce) {
+        favoris.add(annonce);
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,5 +1,6 @@
 package org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,20 +21,24 @@ public class Serie {
 
     String nom;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_model")
     Model model;
 
     int annee;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_categorie")
     Categorie categorie; // SUV , 4*4 , Berline , ...
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_moteur")
     Moteur moteur;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_transmission")
     Transmission transmission;
@@ -43,5 +48,4 @@ public class Serie {
     int place;
 
     double consommation;
-
 }

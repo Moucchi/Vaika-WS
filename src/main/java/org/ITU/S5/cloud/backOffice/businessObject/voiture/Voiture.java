@@ -1,5 +1,7 @@
 package org.ITU.S5.cloud.backOffice.businessObject.voiture;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,6 +30,7 @@ public class Voiture {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "id_serie")
     Serie serie;
@@ -38,9 +41,11 @@ public class Voiture {
 
     String couleur; // code hexadecimal
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "voiture")
     List<HistoriqueVoiture> historiqueVoitures;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "voiture")
     List<Annonce> annonces;
 
