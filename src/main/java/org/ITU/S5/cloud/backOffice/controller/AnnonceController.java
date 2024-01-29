@@ -46,8 +46,4 @@ public class AnnonceController {
         return annonceRepo.findAll();
     }
 
-    @GetMapping("/pending")
-    public List<Annonce> getByCategorie(@RequestParam("idCategorie") int idCategorie) {
-        return annonceRepo.findAll();
-    }
 }
