@@ -12,11 +12,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=opposés",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/cylindres?disposition=opposés",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -38,11 +40,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=W",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/cylindres?disposition=W",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -64,11 +68,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=V",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/cylindres?disposition=V",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -90,11 +96,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=horizontal",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/cylindres?disposition=horizontal",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -116,11 +124,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/cylindres?disposition=vertical",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/cylindres?disposition=vertical",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -142,11 +152,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/conceptions?nom=wankel",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/conceptions?nom=wankel",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -168,11 +180,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/conceptions?nom=à piston",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/conceptions?nom=à piston",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -194,11 +208,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/carburants?nom=electricite",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/carburants?nom=electricite",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -220,11 +236,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/carburants?nom=hybride",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/carburants?nom=hybride",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -246,11 +264,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/carburants?nom=diesel",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/carburants?nom=diesel",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -272,11 +292,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/carburants?nom=essence",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/carburants?nom=essence",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -298,11 +320,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/allumages?nom=compression",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/allumages?nom=compression",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -324,11 +348,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/allumages?nom=etincelle",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/allumages?nom=etincelle",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -350,11 +376,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Hyundai",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Hyundai",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -375,11 +403,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Renault",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Renault",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -400,11 +430,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Mercedes",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Mercedes",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -425,11 +457,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Ford",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Ford",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -450,11 +484,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Chevrolet",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Chevrolet",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -475,11 +511,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Nissan",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Nissan",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -500,11 +538,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/marques?nom=Toyota",
+					"raw": "ez-car-production.up.railway.app/v1/marques?nom=Toyota",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"marques"
@@ -525,11 +565,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/categories?nom=Plaisir",
+					"raw": "ez-car-production.up.railway.app/v1/categories?nom=Plaisir",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"categories"
@@ -550,11 +592,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/categories?nom=Berline",
+					"raw": "ez-car-production.up.railway.app/v1/categories?nom=Berline",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"categories"
@@ -575,11 +619,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/categories?nom=SUV",
+					"raw": "ez-car-production.up.railway.app/v1/categories?nom=SUV",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"categories"
@@ -600,11 +646,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/categories?nom=4*4",
+					"raw": "ez-car-production.up.railway.app/v1/categories?nom=4*4",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"categories"
@@ -625,11 +673,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/transmissions?nom=Arriere",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/transmissions?nom=Arriere",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -651,11 +701,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/models?nom=RAV 4&idMarque=1",
+					"raw": "ez-car-production.up.railway.app/v1/models?nom=RAV 4&idMarque=1",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"models"
@@ -680,11 +732,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/temps?nom=6 temps",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/temps?nom=6 temps",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -731,11 +785,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs?idAllumage=1&idCarburant=1&idConception=1&idCylindre=1&nombreCylindre=16&idTemps=1",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs?idAllumage=1&idCarburant=1&idConception=1&idCylindre=1&nombreCylindre=16&idTemps=1",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs"
@@ -776,11 +832,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/moteurs/series?nom=AX50&annee=2018&idCategorie=3&consommation=6.8&idModel=1&idMoteur=1&place=5&puissance=306&idTransmission=1",
+					"raw": "ez-car-production.up.railway.app/v1/moteurs/series?nom=AX50&annee=2018&idCategorie=3&consommation=6.8&idModel=1&idMoteur=1&place=5&puissance=306&idTransmission=1",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"moteurs",
@@ -834,11 +892,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/voitures?anneeCirculation=2021&couleur=%23C0C0C0&kilometrage=5000&idSerie=1",
+					"raw": "ez-car-production.up.railway.app/v1/voitures?anneeCirculation=2021&couleur=%23C0C0C0&kilometrage=5000&idSerie=1",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"voitures"
@@ -871,11 +931,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/voitures?anneeCirculation=2019&couleur=%234169E1&kilometrage=7800&idSerie=1",
+					"raw": "ez-car-production.up.railway.app/v1/voitures?anneeCirculation=2019&couleur=%234169E1&kilometrage=7800&idSerie=1",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"voitures"
@@ -933,11 +995,13 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:8080/v1/voitures/historiques",
+					"raw": "ez-car-production.up.railway.app/v1/voitures/historiques",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"voitures",
@@ -978,11 +1042,13 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:8080/v1/voitures/historiques",
+					"raw": "ez-car-production.up.railway.app/v1/voitures/historiques",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"voitures",
@@ -1000,7 +1066,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ1NTI1MCwiZXhwIjoxNzA2NTQxNjUwfQ.dz1-iRuV5bM05Xx81UH60UGNxnkwIa1zmtlItP1giZE",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYWtvdG9AZ21haWwuY29tIiwiaWF0IjoxNzA2NTA5NDYwLCJleHAiOjE3MDY1OTU4NjB9.DgG03L_8eNZ_PBTa-_hkmqD7X9HZnSztf-yNTQW6Ke4",
 							"type": "string"
 						}
 					]
@@ -1008,11 +1074,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/v1/voitures/statistiques/1",
+					"raw": "ez-car-production.up.railway.app/v1/voitures/statistiques/1",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"v1",
 						"voitures",
@@ -1022,6 +1090,14 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -1029,7 +1105,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ1MjE2NSwiZXhwIjoxNzA2NTM4NTY1fQ.sfUhbWAwFjAY0g4Hsq7sTIWPSfbcyk7n0yP_sTdgkuQ",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ4OTIwMCwiZXhwIjoxNzA2NTc1NjAwfQ.YJCYOD2nd8Cf9nSN5zMOENlF0ij1QeGDnWBAe8Cbk2A",
 				"type": "string"
 			}
 		]

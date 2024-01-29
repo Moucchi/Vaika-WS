@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "3af5f17b-ff4a-4527-a69a-237f0379ccc8",
+		"_postman_id": "46d210c4-1af5-4028-9958-d82390e160f2",
 		"name": "Cloud-Chat",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31308453"
+		"_exporter_id": "29992008"
 	},
 	"item": [
 		{
@@ -14,7 +14,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRyaWNrQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ2MjA3NCwiZXhwIjoxNzA2NTQ4NDc0fQ.R4WKdsEXCNUXWlMeRruYUYh70wzZx8o3BBCbWIGHYR0",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ5MDE3OSwiZXhwIjoxNzA2NTc2NTc5fQ.d4ReOnWgBbdtTJdwTyLxF8AP_G5mTt_xB-fLpjN34eE",
 							"type": "string"
 						}
 					]
@@ -31,12 +31,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/chat/new-user",
+					"raw": "http://ez-car-production.up.railway.app/api/v1/chat/new-user",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -55,7 +57,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRyaWNrQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ2MjA3NCwiZXhwIjoxNzA2NTQ4NDc0fQ.R4WKdsEXCNUXWlMeRruYUYh70wzZx8o3BBCbWIGHYR0",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ5MDE3OSwiZXhwIjoxNzA2NTc2NTc5fQ.d4ReOnWgBbdtTJdwTyLxF8AP_G5mTt_xB-fLpjN34eE",
 							"type": "string"
 						}
 					]
@@ -72,12 +74,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/chat/new-user",
+					"raw": "http://ez-car-production.up.railway.app/api/v1/chat/new-user",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -96,7 +100,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRyaWNrQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ2MjA3NCwiZXhwIjoxNzA2NTQ4NDc0fQ.R4WKdsEXCNUXWlMeRruYUYh70wzZx8o3BBCbWIGHYR0",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ5MDE3OSwiZXhwIjoxNzA2NTc2NTc5fQ.d4ReOnWgBbdtTJdwTyLxF8AP_G5mTt_xB-fLpjN34eE",
 							"type": "string"
 						}
 					]
@@ -105,7 +109,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"senderId\" : \"patrick@gmail.com\",\r\n    \"recipientId\" : \"jean@gmail.com\",\r\n    \"content\" : \"Salut Jean, ça va ?\"\r\n}",
+					"raw": "{\r\n    \"senderId\" : \"patrick@gmail.com\",\r\n    \"recipientId\" : \"jean@gmail.com\",\r\n    \"content\" : \"Salama Jean ah\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -113,12 +117,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/messages/send",
+					"raw": "http://ez-car-production.up.railway.app/api/v1/messages/send",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -137,7 +143,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRyaWNrQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ2MjA3NCwiZXhwIjoxNzA2NTQ4NDc0fQ.R4WKdsEXCNUXWlMeRruYUYh70wzZx8o3BBCbWIGHYR0",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ5MDE3OSwiZXhwIjoxNzA2NTc2NTc5fQ.d4ReOnWgBbdtTJdwTyLxF8AP_G5mTt_xB-fLpjN34eE",
 							"type": "string"
 						}
 					]
@@ -146,7 +152,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"senderId\" : \"jean@gmail.com\",\r\n    \"recipientId\" : \"patrick@gmail.com\",\r\n    \"content\" : \"Salut, oui ça va et toi?\"\r\n}",
+					"raw": "{\r\n    \"senderId\" : \"jean@gmail.com\",\r\n    \"recipientId\" : \"patrick@gmail.com\",\r\n    \"content\" : \"Salama namana\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -154,12 +160,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/messages/send",
+					"raw": "http://ez-car-production.up.railway.app/api/v1/messages/send",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -178,7 +186,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRyaWNrQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ2MjA3NCwiZXhwIjoxNzA2NTQ4NDc0fQ.R4WKdsEXCNUXWlMeRruYUYh70wzZx8o3BBCbWIGHYR0",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ5MDE3OSwiZXhwIjoxNzA2NTc2NTc5fQ.d4ReOnWgBbdtTJdwTyLxF8AP_G5mTt_xB-fLpjN34eE",
 							"type": "string"
 						}
 					]
@@ -186,12 +194,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/v1/messages/jean@gmail.com/patrick@gmail.com",
+					"raw": "http://ez-car-production.up.railway.app/api/v1/messages/jean@gmail.com/patrick@gmail.com",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"ez-car-production",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -202,6 +212,36 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjQ2OTYyMiwiZXhwIjoxNzA2NTU2MDIyfQ.6lQV78IGjiXZEm_W4ccA1r-2nKF4SG0ZjypO5oBJVp0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
