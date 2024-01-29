@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "2b9932ed-a6a9-4425-b0b8-1267ed7c50e4",
+		"name": "Get Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29992008"
+	},
+	"item": [
+		{
+			"name": "marques",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjU1MTEyMywiZXhwIjoxNzA2NjM3NTIzfQ.ZGjvE_Sec2d603UZrFuM93etpSVQO9ihOd_KZtDg0uA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/marques",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"marques"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "models",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjU1MTEyMywiZXhwIjoxNzA2NjM3NTIzfQ.ZGjvE_Sec2d603UZrFuM93etpSVQO9ihOd_KZtDg0uA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/models",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "series",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjU0ODY4MiwiZXhwIjoxNzA2NjM1MDgyfQ.heSSKWFjBlWwlPSfooMjwSaXUFwud4_6T1Idy5b7Njs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/series",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"series"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Annonces",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqZWFuQGdtYWlsLmNvbSIsImlhdCI6MTcwNjU1MTQ5NSwiZXhwIjoxNzA2NjM3ODk1fQ.A2M-E77r66dEnK6apC3gp_du8_NJ9iDrDWRk8H07Tdg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/annonces",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"annonces"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
