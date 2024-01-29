@@ -9,6 +9,8 @@ import org.ITU.S5.cloud.backOffice.repository.annonce.HistoriqueAnnonceRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/v1/annonces")
 public class AnnonceController {
@@ -37,5 +39,15 @@ public class AnnonceController {
         historiqueAnnonce.setDate(new java.sql.Timestamp(System.currentTimeMillis()));
 
         historiqueAnnonceRepo.save(historiqueAnnonce);
+    }
+
+    @GetMapping
+    public List<Annonce> getAll() {
+        return annonceRepo.findAll();
+    }
+
+    @GetMapping("/pending")
+    public List<Annonce> getByCategorie(@RequestParam("idCategorie") int idCategorie) {
+        return annonceRepo.findAll();
     }
 }
