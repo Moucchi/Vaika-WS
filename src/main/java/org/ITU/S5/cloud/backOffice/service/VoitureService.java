@@ -49,7 +49,7 @@ public class VoitureService {
         return voituresLesPlusVendues;
     }
 
-    public Map<LocalDateTime, Double> getEvolutionPrix(int idVoiture) {
+    public Map<LocalDateTime, Double> getEvolutionPrix(String idVoiture) {
         Map<LocalDateTime, Double> result = null;
         Map<LocalDateTime, Double> finalResult = null;
 
@@ -58,7 +58,7 @@ public class VoitureService {
 
         try (Connection connection = dao.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setInt(1, idVoiture);
+            statement.setString(1, idVoiture);
 
             ResultSet resultSet = statement.executeQuery();
 

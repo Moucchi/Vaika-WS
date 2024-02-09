@@ -9,16 +9,7 @@ import lombok.Setter;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.HistoriqueVoiture;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.Serie;
-import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.Marque;
-import org.ITU.S5.cloud.backOffice.repository.DAO;
-import org.ITU.S5.cloud.backOffice.repository.voiture.HistoriqueVoitureRepo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
-import java.sql.Timestamp;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 @Entity
@@ -27,8 +18,7 @@ import java.util.*;
 @Setter
 public class Voiture {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    String immatriculation;
 
     @JsonBackReference
     @ManyToOne
@@ -42,8 +32,8 @@ public class Voiture {
     String couleur; // code hexadecimal
 
     @JsonManagedReference
-    @OneToMany(mappedBy = "voiture")
-    List<HistoriqueVoiture> historiqueVoitures;
+    @OneToMany(mappedBy = "voiture", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private Set<HistoriqueVoiture> historiqueVoitures = new LinkedHashSet<>();
 
     @JsonManagedReference
     @OneToMany(mappedBy = "voiture")

@@ -42,7 +42,7 @@ public class VoitureController {
     public void addHistorique(@RequestParam("date") String date,
                               @RequestParam("prix") double prixAchat,
                               @RequestParam("idAcheteur") int idAcheteur,
-                              @RequestParam("idVoiture") int idVoiture
+                              @RequestParam("idVoiture") String idVoiture
     ) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate dateOnly = LocalDate.parse(date, formatter);
@@ -79,12 +79,12 @@ public class VoitureController {
     }
 
     @GetMapping("/{id}")
-    public Voiture getById(@PathVariable("id") int id) {
+    public Voiture getById(@PathVariable("id") String id) {
         return voitureRepo.findById(id).get();
     }
 
     @GetMapping("/statistiques/{id}")
-    public Map<LocalDateTime, Double> getEvolutionPrix(@PathVariable("id") int id) {
+    public Map<LocalDateTime, Double> getEvolutionPrix(@PathVariable("id") String id) {
 
         return voitureService.getEvolutionPrix(id);
     }
