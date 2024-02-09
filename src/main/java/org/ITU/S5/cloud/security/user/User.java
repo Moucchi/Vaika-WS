@@ -2,6 +2,7 @@ package org.ITU.S5.cloud.security.user;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
+import org.ITU.S5.cloud.backOffice.businessObject.voiture.Voiture;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.HistoriqueVoiture;
 import org.ITU.S5.cloud.security.token.Token;
 import jakarta.persistence.*;
@@ -14,7 +15,9 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @Builder
@@ -56,6 +59,9 @@ public class User implements UserDetails {
     @JsonManagedReference
     @ManyToMany(mappedBy = "followers")
     List<Annonce> favoris;
+
+    @OneToMany(mappedBy = "user", orphanRemoval = true)
+    private Set<Voiture> voitures = new LinkedHashSet<>();
 
     public void addFavoris(Annonce annonce) {
         favoris.add(annonce);

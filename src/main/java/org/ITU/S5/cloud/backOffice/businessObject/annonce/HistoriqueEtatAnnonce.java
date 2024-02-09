@@ -12,7 +12,7 @@ import java.sql.Timestamp;
 @Getter
 @Setter
 @Entity
-public class HistoriqueAnnonce {
+public class HistoriqueEtatAnnonce {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int reference;

@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 @NoArgsConstructor
@@ -28,5 +27,5 @@ public class EtatAnnonce {
 
     @JsonManagedReference
     @OneToMany(mappedBy = "etat")
-    List<HistoriqueAnnonce> historiqueAnnonces;
+    List<HistoriqueEtatAnnonce> historiqueEtatAnnonces;
 }

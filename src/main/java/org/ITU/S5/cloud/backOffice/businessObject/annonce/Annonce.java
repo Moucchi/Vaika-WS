@@ -64,5 +64,5 @@ public class Annonce {
 
     @JsonManagedReference
     @OneToMany(mappedBy = "annonce")
-    List<HistoriqueAnnonce> historiqueAnnonces;
+    List<HistoriqueEtatAnnonce> historiqueEtatAnnonces;
 }

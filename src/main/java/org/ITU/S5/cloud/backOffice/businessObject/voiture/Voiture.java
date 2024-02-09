@@ -9,6 +9,7 @@ import lombok.Setter;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.general.HistoriqueVoiture;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.information.detail.Serie;
+import org.ITU.S5.cloud.security.user.User;
 
 import java.util.*;
 
@@ -31,13 +32,15 @@ public class Voiture {
 
     String couleur; // code hexadecimal
 
+    int nombrePlace;
+
     @JsonManagedReference
     @OneToMany(mappedBy = "voiture", cascade = CascadeType.REMOVE, orphanRemoval = true)
     private Set<HistoriqueVoiture> historiqueVoitures = new LinkedHashSet<>();
 
-    @JsonManagedReference
-    @OneToMany(mappedBy = "voiture")
-    List<Annonce> annonces;
+    @ManyToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "user_id")
+    private User user;
 
 //    public Map<LocalDate, Double> getEvolutionPrix() {
 //        List<HistoriqueVoiture> historique = this.getHistoriqueVoitures();

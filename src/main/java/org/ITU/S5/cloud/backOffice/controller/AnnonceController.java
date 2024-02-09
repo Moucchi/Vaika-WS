@@ -2,7 +2,7 @@ package org.ITU.S5.cloud.backOffice.controller;
 
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.Annonce;
 import org.ITU.S5.cloud.backOffice.businessObject.annonce.EtatAnnonce;
-import org.ITU.S5.cloud.backOffice.businessObject.annonce.HistoriqueAnnonce;
+import org.ITU.S5.cloud.backOffice.businessObject.annonce.HistoriqueEtatAnnonce;
 import org.ITU.S5.cloud.backOffice.businessObject.voiture.Voiture;
 import org.ITU.S5.cloud.backOffice.repository.annonce.AnnonceRepo;
 import org.ITU.S5.cloud.backOffice.repository.annonce.EtatAnnonceRepo;
@@ -54,18 +54,18 @@ public class AnnonceController {
     public void validateAnnonce(@RequestParam("id") int id) {
         Annonce annonce = annonceRepo.findById(id).get();
 
-        HistoriqueAnnonce historiqueAnnonce = new HistoriqueAnnonce();
-        historiqueAnnonce.setAnnonce(annonce);
+        HistoriqueEtatAnnonce historiqueEtatAnnonce = new HistoriqueEtatAnnonce();
+        historiqueEtatAnnonce.setAnnonce(annonce);
 
         EtatAnnonce etatAnnonce = etatAnnonceRepo.findById(2).get();
 
         annonce.setEtat(etatAnnonce);
         annonceRepo.save(annonce);
 
-        historiqueAnnonce.setEtat(etatAnnonce);
-        historiqueAnnonce.setDate(new java.sql.Timestamp(System.currentTimeMillis()));
+        historiqueEtatAnnonce.setEtat(etatAnnonce);
+        historiqueEtatAnnonce.setDate(new java.sql.Timestamp(System.currentTimeMillis()));
 
-        historiqueAnnonceRepo.save(historiqueAnnonce);
+        historiqueAnnonceRepo.save(historiqueEtatAnnonce);
     }
 
     //    Voir liste/fiche des annonces (sans login)
@@ -76,12 +76,12 @@ public class AnnonceController {
 
     //    Voir l’historique de ses annonces
     @GetMapping("/myHistory")
-    public HashMap<Annonce, List<HistoriqueAnnonce>> getHistoriqueAnnonce(@RequestParam("userId")int userId) {
+    public HashMap<Annonce, List<HistoriqueEtatAnnonce>> getHistoriqueAnnonce(@RequestParam("userId")int userId) {
         List<Annonce> annonces = annonceRepo.findByAnnonceur_Id(userId);
-        HashMap<Annonce, List<HistoriqueAnnonce>> historiqueAnnonce = new HashMap<>();
+        HashMap<Annonce, List<HistoriqueEtatAnnonce>> historiqueAnnonce = new HashMap<>();
 
         for (Annonce annonce : annonces) {
-            historiqueAnnonce.put(annonce, annonce.getHistoriqueAnnonces());
+            historiqueAnnonce.put(annonce, annonce.getHistoriqueEtatAnnonces());
         }
 
         return historiqueAnnonce;
@@ -112,13 +112,13 @@ public class AnnonceController {
         Annonce annonce = annonceRepo.findById(idAnnonce).get();
         EtatAnnonce etatAnnonce = etatAnnonceRepo.findById(idStatus).get();
 
-        HistoriqueAnnonce historiqueAnnonce = new HistoriqueAnnonce();
-        historiqueAnnonce.setAnnonce(annonce);
-        historiqueAnnonce.setDate(new java.sql.Timestamp(System.currentTimeMillis()));
-        historiqueAnnonce.setEtat(etatAnnonce);
+        HistoriqueEtatAnnonce historiqueEtatAnnonce = new HistoriqueEtatAnnonce();
+        historiqueEtatAnnonce.setAnnonce(annonce);
+        historiqueEtatAnnonce.setDate(new java.sql.Timestamp(System.currentTimeMillis()));
+        historiqueEtatAnnonce.setEtat(etatAnnonce);
 
         annonce.setEtat(etatAnnonce);
         annonceRepo.save(annonce);
-        historiqueAnnonceRepo.save(historiqueAnnonce);
+        historiqueAnnonceRepo.save(historiqueEtatAnnonce);
     }
 }
