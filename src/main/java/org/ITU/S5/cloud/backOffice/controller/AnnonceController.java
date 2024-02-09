@@ -34,7 +34,7 @@ public class AnnonceController {
     @Autowired
     VoitureRepo voitureRepo;
     @PostMapping
-    public void addAnnonce(@RequestParam("userId")int userId , @RequestParam("idVoiture")int idVoiture , @RequestParam("prix")double prix) {
+    public void addAnnonce(@RequestParam("userId")int userId , @RequestParam("idVoiture")String idVoiture , @RequestParam("prix")double prix) {
         Voiture voiture = voitureRepo.findById(idVoiture).get();
         User user = userRepository.findById(userId).get();
         int idEtat = 1;
